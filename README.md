@@ -32,4 +32,6 @@ En cas d'erreur, l'onglet **History** du fichier permet de revenir à une versio
 
 ## Formulaire de devis
 
-Le formulaire utilise Netlify Forms. Les demandes arrivent dans le tableau de bord Netlify (Forms > devis), avec les plans en pièce jointe, et une notification est envoyée par mail à driv3dfr@gmail.com.
+Le formulaire est relié au service gratuit FormSubmit (formsubmit.co). Chaque demande arrive directement par mail sur driv3dfr@gmail.com, avec le plan en pièce jointe.
+
+La toute première demande déclenche un mail d'activation de FormSubmit : il faut cliquer sur le bouton de confirmation une seule fois.
