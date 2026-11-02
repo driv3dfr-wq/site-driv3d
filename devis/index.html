@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Demander un devis | D-Riv 3D</title>
-<meta name="description" content="Demandez gratuitement le devis de votre maquette d'architecture : décrivez votre projet et joignez vos plans.">
+<meta name="description" content="Demandez gratuitement le devis de votre maquette d'architecture : décrivez votre projet en quelques champs.">
 <link rel="canonical" href="https://d-riv3d.fr/devis/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Demander un devis | D-Riv 3D">
-<meta property="og:description" content="Demandez gratuitement le devis de votre maquette d'architecture : décrivez votre projet et joignez vos plans.">
+<meta property="og:description" content="Demandez gratuitement le devis de votre maquette d'architecture : décrivez votre projet en quelques champs.">
 <meta property="og:url" content="https://d-riv3d.fr/devis/">
 <meta property="og:image" content="https://d-riv3d.fr/assets/img/og-image.jpg">
 <meta property="og:locale" content="fr_FR">
@@ -43,16 +43,17 @@
   <div class="wrap">
     <p class="eyebrow">Devis gratuit</p>
     <h1>Parlez-moi de votre projet.</h1>
-    <p class="lead">Décrivez votre bâtiment et joignez vos plans si vous les avez. Je reviens vers vous avec un devis détaillé.</p>
+    <p class="lead">Décrivez votre bâtiment en quelques champs. Je reviens vers vous avec un devis détaillé.</p>
   </div>
 </section>
 <section class="band">
   <div class="wrap form-layout">
-    <form class="quote" name="devis" method="POST" action="https://formsubmit.co/driv3dfr@gmail.com" enctype="multipart/form-data">
-      <input type="hidden" name="_subject" value="Nouvelle demande de devis depuis d-riv3d.fr">
-      <input type="hidden" name="_template" value="table">
-      <input type="hidden" name="_next" value="https://d-riv3d.fr/merci/">
-      <input type="text" name="_honey" class="hidden-field" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <form class="quote" name="devis" method="POST" action="https://api.web3forms.com/submit">
+      <input type="hidden" name="access_key" value="c3965bcd-99ab-43ce-bfd1-e067bc282b75">
+      <input type="hidden" name="subject" value="Nouvelle demande de devis depuis d-riv3d.fr">
+      <input type="hidden" name="from_name" value="Site D-Riv 3D">
+      <input type="hidden" name="redirect" value="https://d-riv3d.fr/merci/">
+      <input type="checkbox" name="botcheck" class="hidden-field" tabindex="-1" autocomplete="off" aria-hidden="true">
 
       <fieldset>
         <legend>Vous</legend>
@@ -94,7 +95,7 @@
             <label><input type="checkbox" name="options[]" value="Cloche plexiglas">Cloche plexiglas</label>
           </div>
         </div>
-        <div class="field"><label for="plans">Vos plans <span class="hint">(PDF, DWG ou images, 8 Mo maximum)</span></label><input id="plans" name="plans" type="file" accept=".pdf,.dwg,.dxf,.jpg,.jpeg,.png,.zip"></div>
+        <p class="hint">Vos plans (PDF, DWG, images) : après l'envoi, vous recevrez ma réponse par e-mail et pourrez y joindre vos fichiers, même lourds.</p>
         <div class="field"><label for="message">Votre message</label><textarea id="message" name="message" placeholder="Type de bâtiment, usage de la maquette, date souhaitée..."></textarea></div>
       </fieldset>
 
