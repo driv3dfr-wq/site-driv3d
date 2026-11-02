@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Demander un devis | D-Riv 3D</title>
+<meta name="description" content="Demandez gratuitement le devis de votre maquette d'architecture : décrivez votre projet et joignez vos plans.">
+<link rel="canonical" href="https://d-riv3d.fr/devis/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Demander un devis | D-Riv 3D">
+<meta property="og:description" content="Demandez gratuitement le devis de votre maquette d'architecture : décrivez votre projet et joignez vos plans.">
+<meta property="og:url" content="https://d-riv3d.fr/devis/">
+<meta property="og:image" content="https://d-riv3d.fr/assets/img/og-image.jpg">
+<meta property="og:locale" content="fr_FR">
+<link rel="icon" href="/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/img/logo/apple-touch-icon.png">
+<meta name="theme-color" content="#101113">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira:wght@500;600;700&amp;family=Public+Sans:wght@400;500;600&amp;family=IBM+Plex+Mono:wght@500&amp;display=swap">
+<link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+<a class="skip" href="#contenu">Aller au contenu</a>
+<header class="site">
+  <div class="wrap">
+    <a class="logo" href="/" aria-label="D-Riv3D Création, accueil"><img src="/assets/img/logo/logo-noir.png" alt="D-Riv3D Création" width="800" height="258"></a>
+    <nav class="main" id="menu" aria-label="Navigation principale">
+      <a href="/realisations/">Réalisations</a>
+      <a href="/maquettes/">Maquettes et options</a>
+      <a href="/professionnels/">Pour les pros</a>
+    </nav>
+    <div class="head-cta">
+      <a class="tel" href="tel:+33652976466">06 52 97 64 66</a>
+      <a class="btn btn-accent" href="/devis/"><span class="hide-sm">Demander un devis</span><span class="show-sm">Devis</span></a>
+      <button class="menu-btn" type="button" aria-controls="menu" aria-expanded="false">Menu</button>
+    </div>
+  </div>
+</header>
+<main id="contenu">
+
+<section class="page-hero">
+  <div class="wrap">
+    <p class="eyebrow">Devis gratuit</p>
+    <h1>Parlez-moi de votre projet.</h1>
+    <p class="lead">Décrivez votre bâtiment et joignez vos plans si vous les avez. Je reviens vers vous avec un devis détaillé.</p>
+  </div>
+</section>
+<section class="band">
+  <div class="wrap form-layout">
+    <form class="quote" name="devis" method="POST" action="/merci/" enctype="multipart/form-data" data-netlify="true" netlify-honeypot="site-web">
+      <input type="hidden" name="form-name" value="devis">
+      <p class="hidden-field"><label>Ne pas remplir : <input name="site-web" tabindex="-1" autocomplete="off"></label></p>
+
+      <fieldset>
+        <legend>Vous</legend>
+        <div class="row">
+          <div class="field"><label for="nom">Nom et prénom</label><input id="nom" name="nom" type="text" autocomplete="name" required></div>
+          <div class="field"><label for="societe">Société <span class="hint">(facultatif)</span></label><input id="societe" name="societe" type="text" autocomplete="organization"></div>
+        </div>
+        <div class="row">
+          <div class="field"><label for="email">E-mail</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+          <div class="field"><label for="telephone">Téléphone <span class="hint">(facultatif)</span></label><input id="telephone" name="telephone" type="tel" autocomplete="tel"></div>
+        </div>
+        <div class="field"><label for="profil">Vous êtes</label>
+          <select id="profil" name="profil">
+            <option>Particulier</option><option>Promoteur</option><option>Constructeur</option><option>Architecte ou architecte d'intérieur</option><option>Collectivité ou patrimoine</option><option>Autre</option>
+          </select>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Le projet</legend>
+        <div class="row">
+          <div class="field"><label for="echelle">Échelle souhaitée</label>
+            <select id="echelle" name="echelle"><option>1:50e (maison individuelle)</option><option>1:75e (collectif)</option><option>Je ne sais pas</option></select>
+          </div>
+          <div class="field"><label for="etages">Nombre de niveaux <span class="hint">(RDC = 1)</span></label><input id="etages" name="etages" type="number" min="1" max="30" inputmode="numeric"></div>
+        </div>
+        <div class="row">
+          <div class="field"><label for="surface">Surface de plancher <span class="hint">(m²)</span></label><input id="surface" name="surface" type="number" min="0" inputmode="numeric"></div>
+          <div class="field"><label for="jardin">Surface du jardin <span class="hint">(m², 0 si aucun)</span></label><input id="jardin" name="surface-jardin" type="number" min="0" inputmode="numeric"></div>
+        </div>
+        <div class="field"><span class="label" id="opt-l">Options qui vous intéressent</span>
+          <div class="checks" role="group" aria-labelledby="opt-l">
+            <label><input type="checkbox" name="options[]" value="Jardin">Jardin</label>
+            <label><input type="checkbox" name="options[]" value="Éclairage intérieur">Éclairage intérieur</label>
+            <label><input type="checkbox" name="options[]" value="Éclairage extérieur">Éclairage extérieur</label>
+            <label><input type="checkbox" name="options[]" value="Murs ouvragés">Murs ouvragés</label>
+            <label><input type="checkbox" name="options[]" value="Mobilier">Mobilier</label>
+            <label><input type="checkbox" name="options[]" value="Cadre métal">Cadre métal</label>
+            <label><input type="checkbox" name="options[]" value="Cloche plexiglas">Cloche plexiglas</label>
+          </div>
+        </div>
+        <div class="field"><label for="plans">Vos plans <span class="hint">(PDF, DWG ou images, 8 Mo maximum)</span></label><input id="plans" name="plans" type="file" accept=".pdf,.dwg,.dxf,.jpg,.jpeg,.png,.zip"></div>
+        <div class="field"><label for="message">Votre message</label><textarea id="message" name="message" placeholder="Type de bâtiment, usage de la maquette, date souhaitée..."></textarea></div>
+      </fieldset>
+
+      <p class="hint">Vos informations servent uniquement à répondre à votre demande. <a href="/mentions-legales/#confidentialite">En savoir plus</a>.</p>
+      <p><button class="btn btn-accent" type="submit">Envoyer ma demande</button></p>
+    </form>
+    <aside class="side">
+      <div class="box"><h3>Par téléphone</h3><p><a class="tel" style="font-size:18px;color:var(--fg)" href="tel:+33652976466">06 52 97 64 66</a></p></div>
+      <div class="box"><h3>Par e-mail</h3><p><a href="mailto:driv3dfr@gmail.com">driv3dfr@gmail.com</a></p><p>Pratique pour envoyer plusieurs plans ou des fichiers lourds.</p></div>
+      <div class="box"><h3>Pas encore de plans ?</h3><p>Écrivez-moi quand même : on peut partir de plans papier ou de photos.</p></div>
+    </aside>
+  </div>
+</section>
+</main>
+<footer class="site">
+  <div class="wrap">
+    <div>
+      <img src="/assets/img/logo/logo-blanc.png" alt="D-Riv3D Création" width="800" height="258" loading="lazy">
+      <p style="margin-top:14px">Maquettes d'architecture sur-mesure imprimées en 3D. Atelier dans l'Aube, livraison partout en France.</p>
+    </div>
+    <div>
+      <h3>Le site</h3>
+      <ul>
+        <li><a href="/realisations/">Réalisations</a></li>
+        <li><a href="/maquettes/">Maquettes et options</a></li>
+        <li><a href="/professionnels/">Pour les pros</a></li>
+        <li><a href="/devis/">Demander un devis</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Contact</h3>
+      <ul>
+        <li><a href="tel:+33652976466">06 52 97 64 66</a></li>
+        <li><a href="mailto:driv3dfr@gmail.com">driv3dfr@gmail.com</a></li>
+        <li><a href="https://www.youtube.com/channel/UCyZWPUpRlM--EfFYaEqFSMg" rel="noopener">Chaîne YouTube</a></li>
+      </ul>
+    </div>
+    <p class="legal">© D-Riv 3D · <a href="/mentions-legales/">Mentions légales et confidentialité</a></p>
+  </div>
+</footer>
+<script src="/assets/js/main.js" defer></script>
+</body>
+</html>
