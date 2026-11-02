@@ -1,0 +1,18 @@
+# Configuration de l'hébergement Netlify : le site est servi tel quel, sans étape de construction.
+[build]
+  publish = "."
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+# Anciennes adresses WordPress vers les nouvelles pages
+[[redirects]]
+  from = "/options/"
+  to = "/maquettes/"
+  status = 301
+[[redirects]]
+  from = "/blog/"
+  to = "/realisations/"
+  status = 301
