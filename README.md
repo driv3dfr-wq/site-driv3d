@@ -32,6 +32,6 @@ En cas d'erreur, l'onglet **History** du fichier permet de revenir à une versio
 
 ## Formulaire de devis
 
-Le formulaire est relié au service gratuit FormSubmit (formsubmit.co). Chaque demande arrive directement par mail sur driv3dfr@gmail.com, avec le plan en pièce jointe.
+Le formulaire est relié au service gratuit Web3Forms (web3forms.com). Chaque demande arrive directement par mail sur driv3dfr@gmail.com. La clé `access_key` dans `devis/index.html` indique à Web3Forms où envoyer les demandes.
 
-La toute première demande déclenche un mail d'activation de FormSubmit : il faut cliquer sur le bouton de confirmation une seule fois.
+Les plans ne passent pas par le formulaire (pièces jointes payantes chez Web3Forms) : le client les envoie en répondant au mail.

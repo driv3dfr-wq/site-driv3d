@@ -1,7 +1,7 @@
 // D-Riv 3D : petits comportements du site (menu mobile, curseur jour/nuit, galerie, vidéos).
 (function () {
   // Formulaire de devis : après l'envoi, retour sur la page Merci du site actuel
-  var next = document.querySelector('form.quote input[name=_next]');
+  var next = document.querySelector('form.quote input[name=redirect]');
   if (next) next.value = location.origin + '/merci/';
 
   // Menu mobile
