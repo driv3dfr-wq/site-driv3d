@@ -234,3 +234,10 @@ footer.site .legal{grid-column:1/-1;border-top:1px solid #26282b;padding-top:18p
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 .show-sm{display:none}
 @media (max-width:520px){.hide-sm{display:none}.show-sm{display:inline}}
+
+.price-photos{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.price-photos img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border-radius:2px;display:block}
+.price-real{display:flex;justify-content:space-between;align-items:center;gap:12px;background:var(--surface);padding:14px 16px;border-radius:2px;border-left:3px solid var(--accent)}
+.price-real small{color:var(--muted);font-size:13px;display:block}
+.price-real strong{font:600 26px var(--display);white-space:nowrap;font-variant-numeric:tabular-nums}
+.price-sub{font-size:13px;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);margin:4px 0 -8px}
