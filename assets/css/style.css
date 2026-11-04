@@ -114,7 +114,7 @@ a.card:hover h3{color:var(--accent)}
 .project dl{display:grid;grid-template-columns:auto 1fr;gap:6px 16px;margin:0;font-size:15px}
 .project dt{font:500 12px/1.9 var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
 .project dd{margin:0}
-.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:8px;min-width:0}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:8px;min-width:0;align-content:start}
 .gallery a{display:block}
 .gallery img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:2px;background:var(--line)}
 .gallery a:first-child{grid-column:span 2;grid-row:span 2}
@@ -183,7 +183,7 @@ a.card:hover h3{color:var(--accent)}
 .videos{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 @media (max-width:860px){.videos{grid-template-columns:1fr}}
 .video{position:relative;aspect-ratio:16/9;background:#000;border-radius:2px;overflow:hidden}
-.video img,.video iframe{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border:0}
+.video img,.video iframe,.video video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border:0}
 .video button{position:absolute;inset:0;width:100%;height:100%;background:transparent;border:0;cursor:pointer}
 .video button::after{content:"▶";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:64px;height:64px;border-radius:50%;background:var(--accent);color:#fff;font-size:22px;display:grid;place-items:center;padding-left:4px}
 
