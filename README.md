@@ -35,3 +35,7 @@ En cas d'erreur, l'onglet **History** du fichier permet de revenir à une versio
 Le formulaire est relié au service gratuit Web3Forms (web3forms.com). Chaque demande arrive directement par mail sur driv3dfr@gmail.com. La clé `access_key` dans `devis/index.html` indique à Web3Forms où envoyer les demandes.
 
 Les plans ne passent pas par le formulaire (pièces jointes payantes chez Web3Forms) : le client les envoie en répondant au mail.
+
+## Dépôt public
+
+Ce dépôt est public depuis le 9 novembre 2026 : le plan gratuit de Netlify ne publie un dépôt privé que si toutes les modifications viennent du compte driv3dfr-wq. Personne d'autre que les collaborateurs ne peut modifier le site. Ne jamais y mettre de mot de passe ou de clé secrète.
